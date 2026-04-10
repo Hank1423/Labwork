@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Document</title>
+        <meta charset="UTF-8">
+        <style>
+            .regestration-form {
+                font-family: Arial, sans-serif;
+                border: 1px solid #ccc;
+                background-color: #fffccc;
+                width: 600px;
+                margin: 20px auto;
+            }
+
+            .form-header {
+                background-color: #ccffcc;
+                color: #0033cc;
+                padding: 10px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .row {
+                display: flex;
+                margin-bottom: 12px;
+                align-items: flex-start;
+            }
+
+            .row label:first-child {
+                width: 120px;
+                color: #0033cc;
+                font-weight: 500;
+            }
+
+            input[type="text"],
+            ịnput[type="date"],
+            input[type="email"],
+            input[type="tel"],
+            textarea,
+            select {
+                border: 1px solid #888;
+                padding: 8px;
+            }
+
+            .input-long {
+                width: 350px;
+            }
+
+            .input-medium {
+                width: 200px;
+            }
+
+            textarea {
+                width: 300px;
+            }
+            select {
+                width: 150px;
+            }
+
+            .radio-group {
+                display: flex;
+                align-items: center;
+            }
+
+            .inline-label {
+                margin-left: 5px;
+                margin-right: 15px;
+                width: auto !important;
+            }
+
+            .btn-row {
+                margin-top: 15px;
+            }
+
+            button {
+                padding: 3px 15px;
+                margin-right: 10px;
+                cursor: pointer;
+                background-color: #e1e1e1;
+                border: 1px solid #666;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <form action="#" method="post" class="regestration-form">
+            <div class="form-header">ĐĂNG KÝ THÔNG TIN</div>
+            <div class="container">
+                <div class="row">
+                    <label>Họ và tên:</label>
+                    <input type="text" name="name" class="input-long">
+                </div>
+
+                <div class="row">
+                    <label>Ngày sinh</label>
+                    <input type="date" name="dob" class="input-medium">
+                </div>
+
+                <div class="row">
+                    <label>Giới tính</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male" class="inline-label">Nam</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female" class="inline-label">Nữ</label>
+                </div>
+
+                <div class="row">
+                    <label>Địa Chỉ</label>
+                    <textarea name="address" rows="4"></textarea>
+                </div>
+
+                <div class="row">
+                    <label>Lớp</label>
+                    <select name="classroom">
+                        <option value="Chọn Lớp">— Chọn lớp —</option>
+                        <option value="Chọn Lớp">Lập trình web</option>
+                        <option value="Chọn Lớp">Thiết kế đồ họa</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <label>Email</label>
+                        <input type="email" name="email" class="input-medium">
+                </div>
+
+                <div class="row">
+                    <label>Điện Thoại</label>
+                    <input type="tel" name="phone" class="input-medium">
+                </div>
+
+                <div class="row btn-row">
+                    <label></label>
+                    <button type="submit" class="btn-submit">Đăng Ký</button>
+                    <button type="reset" class="btn-reset">Nhập Lại</button>
+                </div>
+    </body>
+</html>
