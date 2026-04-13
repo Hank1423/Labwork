@@ -1,0 +1,37 @@
+#result {
+    color: blue;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+input[type="number"], select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+}
+
+.btn-convert {
+    background-color: #8c7ae6; 
+    color: white;
+    border: 2px solid aqua;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-convert:hover {
+    background-color: #7158e2;
+}

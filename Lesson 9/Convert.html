@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="convertForm">
+        <table>
+            <tr>
+                <th>Amount</th>
+                <th>From Currency</th>
+                <th>To Currency</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><input type="number" id="amount" placeholder="Nhập Số Tiền..."></td>
+                <td>
+                    <select id="from">
+                        <option value="VND">VND</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="to">
+                        <option value="VND">VND</option>
+                        <option value="USD">USD</option>    
+                        <option value="EUR">EUR</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+                </td>
+                <td><button type="submit" class="btn-convert">Convert</button></td>
+            </tr>
+        </table>
+    </form>
+    <h3 id="result"></h3>
+</body>
+<script src="main5.js"></script>
+</html>
