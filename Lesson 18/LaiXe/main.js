@@ -1,4 +1,4 @@
-window.onload = function() {
+/*window.onload = function() {
     const canvas = document.getElementById("gameCanvas");
     const ctx = canvas.getContext("2d");
     const scoreElement = document.getElementById("score");
@@ -88,3 +88,32 @@ window.onload = function() {
 
     update();
 };
+*/
+
+function birthday(s, d, m) {
+    // Write your code here
+    let i = 0;
+    let result = [];
+    let n = s.length;
+    while (n - i >= m){
+        let j = i;
+        let x = [];
+        for (;j< m+i; j++){
+            x.push(s[j]);
+        }
+        result.push(x);
+        i++;
+    }
+    let count = 0;
+    for(let i = 0; i < result.length; i++){
+        let total = 0;
+        for(let j=0; j < result[i].length; j++){
+            total += result[i][j];
+        }
+        if(total == d){
+            count++;
+        }
+    } 
+    return count;   
+}
+
